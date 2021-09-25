@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/anime_list">
+
+    <fragment
+        android:id="@+id/anime_list"
+        android:name="com.example.busquedaanime.ui.anime_list"
+        android:label="anime_list"
+        tools:layout="@layout/fragment_anime_list" >
+        <action
+            android:id="@+id/action_anime_list_to_anime_item"
+            app:destination="@id/anime_item" />
+    </fragment>
+    <fragment
+        android:id="@+id/anime_item"
+        android:name="com.example.busquedaanime.ui.anime_item"
+        android:label="anime_item"
+        tools:layout="@layout/fragment_anime_item" >
+        <action
+            android:id="@+id/action_anime_item_to_anime_list"
+            app:destination="@id/anime_list" />
+        <argument
+            android:name="currentAnime"
+            app:argType="com.example.busquedaanime.model.Result" />
+    </fragment>
+</navigation>

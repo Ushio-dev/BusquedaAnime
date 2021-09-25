@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Busqueda Anime</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_item">FRAGMENT ITEM</string>
+    <string name="a_fragment_list">a fragment list</string>
+</resources>
